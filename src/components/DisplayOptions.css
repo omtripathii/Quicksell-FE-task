@@ -1,0 +1,71 @@
+.display-options {
+  position: relative;
+  display: inline-block;
+}
+
+.display-button {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.tune-icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 5px;
+}
+
+.chevron-icon {
+  width: 16px;
+  height: 16px;
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+
+.chevron-icon.open {
+  transform: rotate(180deg);
+}
+
+.options-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  padding: 16px;
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  min-width: 250px;
+}
+
+.option {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.option:last-child {
+  margin-bottom: 0;
+}
+
+.option span {
+  font-size: 14px;
+  color: #6b6f76;
+}
+
+.option select {
+  width: 120px;
+  padding: 5px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  font-size: 14px;
+  background-color: #f4f5f8;
+}
